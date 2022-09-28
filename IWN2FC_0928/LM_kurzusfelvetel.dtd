@@ -1,0 +1,25 @@
+<!ELEMENT LM_kurzusfelvetel (hallgato,kurzusok)>
+<!ATTLIST LM_kurzusfelvetel
+        tanev CDATA #REQUIRED
+        egyetem CDATA #REQUIRED>
+
+<!ELEMENT hallgato (hnev,szulev,szak)>
+<!ATTLIST hallgato id CDATA #REQUIRED>
+        <!ELEMENT hnev (#PCDATA)>
+        <!ELEMENT szulev (#PCDATA)>
+        <!ELEMENT szak (#PCDATA)>
+        <!ATTLIST szak evf CDATA #REQUIRED>
+
+<!ELEMENT kurzusok (kurzus*)>
+    <!ELEMENT kurzus (kurzusnev,kredit,hely,idopont+,(oktato|oraado)?)>
+    <!ATTLIST kurzus
+            id CDATA #REQUIRED
+            nyelv CDATA #IMPLIED
+            jovahagyas (igen, nem) "nem" #IMPLIED>
+        <!ELEMENT kurzusnev (#PCDATA)>
+        <!ELEMENT kredit (#PCDATA)>
+        <!ELEMENT hely (#PCDATA)>s
+        <!ELEMENT idopont (#PCDATA)>
+        <!ELEMENT oktato (#PCDATA)>
+        <!ELEMENT oraado (#PCDATA)>
+

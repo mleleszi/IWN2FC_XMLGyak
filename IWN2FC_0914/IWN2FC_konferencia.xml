@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<konferencia>
+    <cim>Adatkezeles XML-ben</cim>
+    <hallgatok>
+        <hallgato>
+            <nev>Hallgato 1</nev>
+            <lakcim>3530 Miskolc, valami utca 1.</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Hallgato 2</nev>
+            <lakcim>3530 Miskolc, valami utca 2.</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Hallgato 3</nev>
+            <lakcim>3530 Miskolc, valami utca 3.</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Hallgato 4</nev>
+            <lakcim>3530 Miskolc, valami utca 4.</lakcim>
+        </hallgato>
+    </hallgatok>
+    <helyszin>
+        Miskolci Egyetem
+    </helyszin>
+    <eloado>
+        <nev>Dr. Bednarik Laszlo</nev>
+        <adoszam>81238123818</adoszam>
+        <lakcim>3121 Miskolc, valami utca 5.</lakcim>
+    </eloado>
+    <datum>2022.09.14</datum>
+
+</konferencia>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
+        <iro id="trv_4xm_2jb"/>
+    </film>
+    <film id="txn_nxm_3jb" mufaj="drama">
+        <szinesz id="asd_saj_2jd" nev="xjc">
+            <gyerekszínész id="abc_xja_2bs"/>
+            <musicalszínész id="asx_sja_2js"/>
+            <szinkronszínész id="asd_sda_23j"/>
+        </szinesz>
+        <producer id="abc_xjc_2bs" nev="sanyi"/>
+        <dramaturg id="abc_xj1_2bs" nev="peti"/>
+        <operator id="abc_xsa_2bs" nev="laci"/>
+    </film>
+</mozi>

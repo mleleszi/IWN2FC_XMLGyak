@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE LM_orarend SYSTEM "LM_orarend.dtd">
+
+<LM_orarend>
+    <ora id="1" tipus="eloadas">
+        <targy>Mobil programozasi alapok</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Agardi Anita</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="2" tipus="gyakorlat">
+        <targy>Mobil programozasi alapok</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Kunne Dr. Tamas Judit</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="3" tipus="eloadas">
+        <targy>Korszeru informacios rendszerek</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>A1/320</helyszin>
+        <oktato>Dr. Arvai Laszlo</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="4" tipus="gyakorlat">
+        <targy>Korszeru informacios rendszerek</targy>
+        <idopont>
+            <nap>Hetfo</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Soos Robert</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="5" tipus="eloadas">
+        <targy>Oracle rendszergazda</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Kovács László</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="6" tipus="eloadas">
+        <targy>Adatkezeles XML-ben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>XXXII A1</helyszin>
+        <oktato>Dr. Bednarik Laszlo</oktato>
+        <szak>Info</szak>
+    </ora>
+    <ora id="7" tipus="gyakorlat">
+        <targy>Adatkezeles XML-ben</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik Laszlo</oktato>
+        <szak>Info</szak>
+    </ora>
+</LM_orarend>
