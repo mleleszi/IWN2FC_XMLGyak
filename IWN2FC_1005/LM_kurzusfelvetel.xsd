@@ -27,7 +27,7 @@
     </xs:restriction>
 </xs:simpleType>
 
-<xs:element name="kurzusfelvetel">
+<xs:element name="LM_kurzusfelvetel">
     <xs:complexType>
         <xs:sequence>
             <xs:element ref="hallgato"/>
@@ -61,25 +61,27 @@
     <xs:complexType>
         <xs:sequence>
             <xs:element name="kurzus" maxOccurs="unbounded">
-                <xs:all>
-                    <xs:element name="kurzusnev" type="xs:string"/>
-                    <xs:element name="kredit">
-                        <simpleType>
-                            <xs:restriction base="xs:integer">
-                                <xs:minInclusive value="0"/>
-                                <xs:maxInclusive value="0"/>
-                            </xs:restriction>
-                        </simpleType>
-                    </xs:element>
-                    <xs:element name="hely" type="xs:string"/>
-                    <xs:element name="idopont" type="xs:string" minOccurs="0"/>
-                    <xs:element name="oktato" type="xs:string" minOccurs="0"/>
-                    <xs:element name="oraado" type="xs:string" minOccurs="0"/>
-                </xs:all>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="kurzusnev" type="xs:string"/>
+                        <xs:element name="kredit">
+                            <simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="0"/>
+                                </xs:restriction>
+                            </simpleType>
+                        </xs:element>
+                        <xs:element name="hely" type="xs:string"/>
+                        <xs:element name="idopont" type="xs:string"/>
+                        <xs:element name="oktato" type="xs:string"/>
+                        <xs:element name="oraado" type="xs:string"/>
+                    </xs:all>
+                    <xs:attribute name="id" type="idTipus" use="required"/>
+                    <xs:attribute name="jovahagyas" type="igenNemTipus" use="optional"/>
+                    <xs:attribute name="nyelv" type="xs:string" use="optional"/>
+                </xs:complexType>
             </xs:element>
-            <xs:attribute name="id" type="idTipus" use="required"/>
-            <xs:attribute name="jovahagyas" type="igenNemTipus" use="optional" default="nem"/>
-            <xs:attribute name="nyelv" type="xs:string" use="optional"/>
         </xs:sequence>
     </xs:complexType>
 </xs:element>
