@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LM_kurzusfelvetel tanev="2022/2023 I." egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="LM_kurzusfelvetel.xsd">
+    <hallgato id="IWN2FC">
+        <hnev>Leleszi Marcell</hnev>
+        <szulev>2000-07-08</szulev>
+        <szak evf="7">Mernokinformatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezeles XML kornyezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik Laszlo</oktato>
+        </kurzus>
+        <kurzus id="GEIAL322-B" jovahagyas="igen">
+            <kurzusnev>Adatbazis rendszerek I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In101</hely>
+            <idopont>Kedd 08:00-9:30</idopont>
+            <oktato>Dr. Kovacs Laszlo</oktato>
+        </kurzus>
+        <kurzus id="GEIAL312-A" nyelv="magyar">
+            <kurzusnev>Korszeru Informacios Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1/320</hely>
+            <idopont>Kedd 14:00-15:30</idopont>
+            <oraado>Soos Robert</oraado>
+        </kurzus>
+    </kurzusok>
+</LM_kurzusfelvetel>
