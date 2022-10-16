@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="LM_XDM.xsd">
+<vendeglatas xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="LM_XDM.xsd">
 
     <!-- Etterem -->
     <etterem ekod="e1">
@@ -109,7 +109,7 @@
         <cim>
             <varos>Miskolc</varos>
             <utca>Minta</utca>
-            <haszam>12</haszam>
+            <hazszam>12</hazszam>
         </cim>
     </vendeg>
 
@@ -119,7 +119,7 @@
         <cim>
             <varos>Miskolc</varos>
             <utca>Minta</utca>
-            <haszam>12</haszam>
+            <hazszam>12</hazszam>
         </cim>
     </vendeg>
 
@@ -129,7 +129,7 @@
         <cim>
             <varos>Miskolc</varos>
             <utca>Minta</utca>
-            <haszam>12</haszam>
+            <hazszam>12</hazszam>
         </cim>
     </vendeg>
 
