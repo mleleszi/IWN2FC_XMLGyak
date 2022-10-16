@@ -57,7 +57,7 @@
 
         <xs:keyref refer="etterem_kulcs" name="gyakornok_etterem_idegen_kulcs">
             <xs:selector xpath="gyakornok"/>
-            <xs:filed xpath="@e_gy"/>
+            <xs:field xpath="@e_gy"/>
         </xs:keyref>
 
         <!-- 1-1 kapcsolat -->
