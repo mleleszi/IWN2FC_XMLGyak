@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="repules">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jarat" type="jaratTipus" maxOccurs="unbounded"/>
+                <xs:element name="repulo" type="repuloTipus" maxOccurs="unbounded"/>
+                <xs:element name="repter" type="repterTipus" maxOccurs="unbounded"/>
+                <xs:element name="iroda" type="irodaTipus" maxOccurs="unbounded"/>
+                <xs:element name="legitarsasag" type="legitarsasagTipus" maxOccurs="unbounded"/>
+                <xs:element name="utas" type="utasTipus" maxOccurs="unbounded"/>
+                <xs:element name="foglalas" type="foglalasTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Elsodleges kulcsok -->
+        <xs:key name="jaratKulcs">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@jaratId"/>
+        </xs:key>
+
+        <xs:key name="repuloKulcs">
+            <xs:selector xpath="repulo"/>
+            <xs:field xpath="@repuloId"/>
+        </xs:key>
+
+        <xs:key name="repterKulcs">
+            <xs:selector xpath="repter"/>
+            <xs:field xpath="@repterId"/>
+        </xs:key>
+
+        <xs:key name="legitarsasagKulcs">
+            <xs:selector xpath="legitarsasag"/>
+            <xs:field xpath="@legitarsasagId"/>
+        </xs:key>
+
+        <xs:key name="utasKulcs">
+            <xs:selector xpath="utas"/>
+            <xs:field xpath="@utasId"/>
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+        <xs:keyref refer="legitarsasagKulcs" name="jaratLegitarsasagIdegenKulcs">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@legitarsasagId"/>
+        </xs:keyref>
+
+        <xs:keyref refer="repuloKulcs" name="jaratRepuloIdegenKulcs">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@repuloId"/>
+        </xs:keyref>
+
+        <xs:keyref refer="repterKulcs" name="jaratIndulasiRepterIdegenKulcs">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@indulasiRepter"/>
+        </xs:keyref>
+
+        <xs:keyref refer="repterKulcs" name="jaratErkezesiRepterIdegenKulcs">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@erkezesiRepter"/>
+        </xs:keyref>
+
+        <xs:keyref refer="repterKulcs" name="irodaRepterIdegenKulcs">
+            <xs:selector xpath="iroda"/>
+            <xs:field xpath="@repterid"/>
+        </xs:keyref>
+
+        <xs:keyref refer="legitarsasagKulcs" name="irodaLegitarsasagIdegenKulcs">
+            <xs:selector xpath="iroda"/>
+            <xs:field xpath="@legitarsasagId"/>
+        </xs:keyref>
+
+        <xs:keyref refer="utasKulcs" name="foglalasUtasIdegenKulcs">
+            <xs:selector xpath="utas"/>
+            <xs:field xpath="@utasId"/>
+        </xs:keyref>
+
+        <xs:keyref refer="jaratKulcs" name="foglalasJaratIdegenKulcs">
+            <xs:selector xpath="utas"/>
+            <xs:field xpath="@jaratId"/>
+        </xs:keyref>
+
+        <!-- 1-1 kapcsolat -->
+        <xs:unique name="uniqueJaratRepulo">
+            <xs:selector xpath="jarat"/>
+            <xs:field xpath="@repuloId"/>
+        </xs:unique>
+    </xs:element>
+
+    <!-- Komplex, sajat tipusok -->
+
+    <xs:complexType name="jaratTipus">
+        <xs:sequence>
+            <xs:element name="indulasiIdo" type="xs:dateTime"/>
+            <xs:element name="erkezesiIdo" type="xs:dateTime"/>
+            <xs:element name="vanKiszolgalas">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="igen"/>
+                        <xs:enumeration value="nem"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="jaratId" type="xs:string" use="required"/>
+        <xs:attribute name="legitarsasagId" type="xs:string" use="required"/>
+        <xs:attribute name="repuloId" type="xs:string" use="required"/>
+        <xs:attribute name="indulasiRepter" type="xs:string" use="required"/>
+        <xs:attribute name="erkezesiRepter" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="repuloTipus">
+        <xs:sequence>
+            <xs:element name="gyarto" type="xs:string"/>
+            <xs:element name="modell" type="xs:string"/>
+            <xs:element name="gyartasiEv" type="xs:gYear"/>
+            <xs:element name="kapacitas" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="repuloId" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="repterTipus">
+        <xs:sequence>
+            <xs:element name="IATA" type="xs:string"/>
+            <xs:element name="ICAO" type="xs:string"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="orszag" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="repterId" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="irodaTipus">
+        <xs:sequence>
+            <xs:element name="ferohely" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="repterId" type="xs:string" use="required"/>
+        <xs:attribute name="legitarsasagId" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="legitarsasagTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="dolgozokSzama" type="xs:integer"/>
+            <xs:element name="orszag" type="xs:string"/>
+            <xs:element name="telefonszam" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="legitarsasagId" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="utasTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="cim">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="orszag" type="xs:string"/>
+                        <xs:element name="helyiseg" type="xs:string"/>
+                        <xs:element name="irsz" type="xs:string"/>
+                        <xs:element name="utca" type="xs:string"/>
+                        <xs:element name="hazszam" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="email" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="szuletesiIdo" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="utasId" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="foglalasTipus">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:integer"/>
+            <xs:element name="datum" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="utasId" type="xs:string" use="required"/>
+        <xs:attribute name="jaratId" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>

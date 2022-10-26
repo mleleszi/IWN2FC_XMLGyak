@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<repules>
+<repules xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaIwn2fc.xsd">
     <!-- Jarat -->
-    <jarat jaratId="j1" legitarsasagId="l1" indulasiRepter="repter1" erkezesiRepter="repter2">
-        <indulasiIdo>12:00</indulasiIdo>
-        <erkezesiIdo>14:00</erkezesiIdo>
+    <jarat jaratId="j1" legitarsasagId="l1" repuloId="r1" indulasiRepter="repter1" erkezesiRepter="repter2">
+        <indulasiIdo>2022-08-23T10:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-23T12:00:00</erkezesiIdo>
         <vanKiszolgalas>igen</vanKiszolgalas>
     </jarat>
 
-    <jarat jaratId="j2" legitarsasagId="l1" indulasiRepter="repter2" erkezesiRepter="repter3">
-        <indulasiIdo>12:00</indulasiIdo>
-        <erkezesiIdo>15:00</erkezesiIdo>
+    <jarat jaratId="j2" legitarsasagId="l1" repuloId="r2" indulasiRepter="repter2" erkezesiRepter="repter3">
+        <indulasiIdo>2022-08-05T13:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-05T18:00:00</erkezesiIdo>
         <vanKiszolgalas>igen</vanKiszolgalas>
     </jarat>
 
-    <jarat jaratId="j3" legitarsasagId="l2" indulasiRepter="repter3" erkezesiRepter="repter1">
-        <indulasiIdo>13:00</indulasiIdo>
-        <erkezesiIdo>19:00</erkezesiIdo>
+    <jarat jaratId="j3" legitarsasagId="l2" repuloId="r3" indulasiRepter="repter3" erkezesiRepter="repter1">
+        <indulasiIdo>2022-08-21T13:30:00</indulasiIdo>
+        <erkezesiIdo>2022-08-21T19:00:00</erkezesiIdo>
         <vanKiszolgalas>nem</vanKiszolgalas>
     </jarat>
 
-    <jarat jaratId="j4" legitarsasagId="l3" indulasiRepter="repter1" erkezesiRepter="repter3">
-        <indulasiIdo>10:00</indulasiIdo>
-        <erkezesiIdo>16:00</erkezesiIdo>
+    <jarat jaratId="j4" legitarsasagId="l3" repuloId="r4" indulasiRepter="repter1" erkezesiRepter="repter3">
+        <indulasiIdo>2022-08-30T02:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-30T10:00:00</erkezesiIdo>
         <vanKiszolgalas>nem</vanKiszolgalas>
     </jarat>
 
@@ -46,6 +46,13 @@
         <modell>A380</modell>
         <gyartasiEv>2012</gyartasiEv>
         <kapacitas>700</kapacitas>
+    </repulo>
+
+    <repulo repuloId="r4">
+        <gyarto>Boeing</gyarto>
+        <modell>787</modell>
+        <gyartasiEv>2019</gyartasiEv>
+        <kapacitas>400</kapacitas>
     </repulo>
 
     <!-- Repter -->
@@ -130,7 +137,7 @@
         </cim>
         <email>bela@gmail.com</email>
         <email>bela.munka@gmail.com</email>
-        <szuletesiIdo>1990.12.12.</szuletesiIdo>
+        <szuletesiIdo>1990-12-12</szuletesiIdo>
     </utas>
 
     <utas utasId="u2">
@@ -144,7 +151,7 @@
         </cim>
         <email>adam@gmail.com</email>
         <email>adam.munka@gmail.com</email>
-        <szuletesiIdo>1992.12.12.</szuletesiIdo>
+        <szuletesiIdo>1992-10-12</szuletesiIdo>
     </utas>
 
     <utas utasId="u3">
@@ -157,27 +164,27 @@
             <hazszam>190</hazszam>
         </cim>
         <email>arpad@gmail.com</email>
-        <szuletesiIdo>1990.12.12.</szuletesiIdo>
+        <szuletesiIdo>1980-02-12</szuletesiIdo>
     </utas>
 
     <!-- Foglalas -->
     <foglalas utasId="u1" jaratId="j1">
         <ar>33000</ar>
-        <datum>2022.07.14.</datum>
+        <datum>2022-07-14</datum>
     </foglalas>
 
     <foglalas utasId="u1" jaratId="j2">
         <ar>45000</ar>
-        <datum>2022.07.18.</datum>
+        <datum>2022-07-18</datum>
     </foglalas>
 
     <foglalas utasId="u2" jaratId="j3">
         <ar>45000</ar>
-        <datum>2022.07.31.</datum>
+        <datum>2022-07-31</datum>
     </foglalas>
 
     <foglalas utasId="u3" jaratId="j2">
         <ar>92000</ar>
-        <datum>2022.07.18.</datum>
+        <datum>2022-07-18</datum>
     </foglalas>
 </repules>
