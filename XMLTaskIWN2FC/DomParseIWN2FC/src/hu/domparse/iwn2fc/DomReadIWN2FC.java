@@ -36,37 +36,37 @@ public class DomReadIWN2FC {
 
             doc.getDocumentElement().normalize();
 
-            // read and print jarat element, it's attributes and sub-elements
+            // read and print jarat element
             NodeList nodeList = doc.getElementsByTagName("jarat");
             List<String> attributes = Arrays.asList("jaratId", "legitarsasagId", "repuloId", "indulasiRepter", "erkezesiRepter");
             List<String> tagNames = Arrays.asList("indulasiIdo", "erkezesiIdo", "vanKiszolgalas");
             readNodes(nodeList, attributes, tagNames);
 
-            // read and print repulo element, it's attributes and sub-elements
+            // read and print repulo element
             nodeList = doc.getElementsByTagName("repulo");
             attributes = Arrays.asList("repuloId");
             tagNames = Arrays.asList("gyarto", "modell", "gyartasiEv", "kapacitas");
             readNodes(nodeList, attributes, tagNames);
 
-            // read and print repter element, it's attributes and sub-elements
+            // read and print repter element
             nodeList = doc.getElementsByTagName("repter");
             attributes = Arrays.asList("repterId");
             tagNames = Arrays.asList("IATA", "ICAO", "nev", "orszag", "varos");
             readNodes(nodeList, attributes, tagNames);
 
-            // read and print iroda element, it's attributes and sub-elements
+            // read and print iroda element
             nodeList = doc.getElementsByTagName("iroda");
             attributes = Arrays.asList("repterId", "legitarsasagId");
             tagNames = Arrays.asList("ferohely");
             readNodes(nodeList, attributes, tagNames);
 
-            // read and print legitarsasag element, it's attributes and sub-elements
+            // read and print legitarsasag element
             nodeList = doc.getElementsByTagName("legitarsasag");
             attributes = Arrays.asList("legitarsasagId");
             tagNames = Arrays.asList("nev", "dolgozokSzama", "orszag", "telefonszam");
             readNodes(nodeList, attributes, tagNames);
 
-            // read and print utas element, it's attributes and sub-elements
+            // read and print utas element
             nodeList = doc.getElementsByTagName("utas");
             for (int itr = 0; itr < nodeList.getLength(); itr++)
             {
@@ -89,7 +89,6 @@ public class DomReadIWN2FC {
                 System.out.println("");
             }
 
-
             // read and print foglalas element, it's attributes and sub-elements
             nodeList = doc.getElementsByTagName("foglalas");
             attributes = Arrays.asList("utasId", "jaratId");
@@ -101,6 +100,7 @@ public class DomReadIWN2FC {
         }
     }
 
+    // given a list of nodes, it writes their attributes and sub-elements to the console and to a file
     public static void readNodes(NodeList nodeList, List<String> attributes, List<String> tagNames) {
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
