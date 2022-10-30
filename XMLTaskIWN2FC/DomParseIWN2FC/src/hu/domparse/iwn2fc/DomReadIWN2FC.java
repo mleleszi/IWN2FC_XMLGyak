@@ -24,7 +24,7 @@ public class DomReadIWN2FC {
             File file = new File(XML_FILE_PATH);
 
             // set output stream to write to both txt file and console
-            FileOutputStream fout = new FileOutputStream("test.txt");
+            FileOutputStream fout = new FileOutputStream("output.txt");
             TeePrintStream tee = new TeePrintStream(fout, System.out);
             System.setOut(tee);
 
@@ -36,9 +36,64 @@ public class DomReadIWN2FC {
 
             doc.getDocumentElement().normalize();
 
+            // read and print jarat element, it's attributes and sub-elements
             NodeList nodeList = doc.getElementsByTagName("jarat");
             List<String> attributes = Arrays.asList("jaratId", "legitarsasagId", "repuloId", "indulasiRepter", "erkezesiRepter");
             List<String> tagNames = Arrays.asList("indulasiIdo", "erkezesiIdo", "vanKiszolgalas");
+            readNodes(nodeList, attributes, tagNames);
+
+            // read and print repulo element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("repulo");
+            attributes = Arrays.asList("repuloId");
+            tagNames = Arrays.asList("gyarto", "modell", "gyartasiEv", "kapacitas");
+            readNodes(nodeList, attributes, tagNames);
+
+            // read and print repter element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("repter");
+            attributes = Arrays.asList("repterId");
+            tagNames = Arrays.asList("IATA", "ICAO", "nev", "orszag", "varos");
+            readNodes(nodeList, attributes, tagNames);
+
+            // read and print iroda element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("iroda");
+            attributes = Arrays.asList("repterId", "legitarsasagId");
+            tagNames = Arrays.asList("ferohely");
+            readNodes(nodeList, attributes, tagNames);
+
+            // read and print legitarsasag element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("legitarsasag");
+            attributes = Arrays.asList("legitarsasagId");
+            tagNames = Arrays.asList("nev", "dolgozokSzama", "orszag", "telefonszam");
+            readNodes(nodeList, attributes, tagNames);
+
+            // read and print utas element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("utas");
+            for (int itr = 0; itr < nodeList.getLength(); itr++)
+            {
+                Node node = nodeList.item(itr);
+                System.out.println("----- " + node.getNodeName() + (itr + 1) + " -----");
+                if (node.getNodeType() == Node.ELEMENT_NODE)
+                {
+                    Element element = (Element) node;
+                    Element cim = (Element) element.getElementsByTagName("cim").item(0);
+
+                    System.out.println("utasId: " + element.getAttribute("utasId"));
+                    System.out.println("orszag: "+ cim.getElementsByTagName("orszag").item(0).getTextContent());
+                    System.out.println("helyiseg: "+ cim.getElementsByTagName("helyiseg").item(0).getTextContent());
+                    System.out.println("irsz: "+ cim.getElementsByTagName("irsz").item(0).getTextContent());
+                    System.out.println("utca: "+ cim.getElementsByTagName("utca").item(0).getTextContent());
+                    System.out.println("hazszam: "+ cim.getElementsByTagName("hazszam").item(0).getTextContent());
+                    System.out.println("email: "+ element.getElementsByTagName("email").item(0).getTextContent());
+                    System.out.println("szuletesiIdo: "+ element.getElementsByTagName("szuletesiIdo").item(0).getTextContent());
+                }
+                System.out.println("");
+            }
+
+
+            // read and print foglalas element, it's attributes and sub-elements
+            nodeList = doc.getElementsByTagName("foglalas");
+            attributes = Arrays.asList("utasId", "jaratId");
+            tagNames = Arrays.asList("ar", "datum");
             readNodes(nodeList, attributes, tagNames);
 
         } catch (Exception e) {
@@ -56,7 +111,10 @@ public class DomReadIWN2FC {
                     System.out.println(attribute + ": " + element.getAttribute(attribute));
                 });
                 tagNames.forEach(tagName -> {
-                    System.out.println(tagName + ": " + element.getElementsByTagName(tagName).item(0).getTextContent());
+                    NodeList nodeList1 = element.getElementsByTagName(tagName);
+                    for (int j = 0; j < nodeList1.getLength(); j++) {
+                        System.out.println(tagName + ": " + nodeList1.item(0).getTextContent());
+                    }
                 });
             }
             System.out.println();
