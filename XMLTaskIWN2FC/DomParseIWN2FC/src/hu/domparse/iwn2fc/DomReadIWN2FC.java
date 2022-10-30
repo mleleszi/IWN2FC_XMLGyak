@@ -7,10 +7,8 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,7 +22,7 @@ public class DomReadIWN2FC {
             File file = new File(XML_FILE_PATH);
 
             // set output stream to write to both txt file and console
-            FileOutputStream fout = new FileOutputStream("output.txt");
+            FileOutputStream fout = new FileOutputStream(TXT_OUTPUT_PATH);
             TeePrintStream tee = new TeePrintStream(fout, System.out);
             System.setOut(tee);
 
@@ -101,7 +99,7 @@ public class DomReadIWN2FC {
     }
 
     // given a list of nodes, it writes their attributes and sub-elements to the console and to a file
-    public static void readNodes(NodeList nodeList, List<String> attributes, List<String> tagNames) {
+    private static void readNodes(NodeList nodeList, List<String> attributes, List<String> tagNames) {
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
             System.out.println("----- " + node.getNodeName() + (i + 1) + " -----");
