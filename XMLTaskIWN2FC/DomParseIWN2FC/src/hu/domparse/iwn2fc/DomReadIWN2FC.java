@@ -40,7 +40,7 @@ public class DomReadIWN2FC {
     }
 
     // prints a list of nodes
-    private static void printElements(NodeList nodeList) {
+    public static void printElements(NodeList nodeList) {
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
             System.out.println("----- " + node.getNodeName() + (i + 1) + " -----");
