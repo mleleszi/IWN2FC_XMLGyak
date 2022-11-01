@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><repules xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaIwn2fc.xsd">
+    <!-- Jarat -->
+    <jarat erkezesiRepter="repter2" indulasiRepter="repter1" jaratId="j1" legitarsasagId="l1" repuloId="r1">
+        <indulasiIdo>2022-08-23T10:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-23T12:00:00</erkezesiIdo>
+        <vanKiszolgalas>igen</vanKiszolgalas>
+    </jarat>
+
+    <jarat erkezesiRepter="repter3" indulasiRepter="repter2" jaratId="j2" legitarsasagId="l1" repuloId="r2">
+        <indulasiIdo>2022-08-05T13:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-05T18:00:00</erkezesiIdo>
+        <vanKiszolgalas>igen</vanKiszolgalas>
+    </jarat>
+
+    <jarat erkezesiRepter="repter1" indulasiRepter="repter3" jaratId="j3" legitarsasagId="l2" repuloId="r3">
+        <indulasiIdo>2022-08-21T13:30:00</indulasiIdo>
+        <erkezesiIdo>2022-08-21T19:00:00</erkezesiIdo>
+        <vanKiszolgalas>nem</vanKiszolgalas>
+    </jarat>
+
+    <jarat erkezesiRepter="repter3" indulasiRepter="repter1" jaratId="j4" legitarsasagId="l3" repuloId="r4">
+        <indulasiIdo>2022-08-30T02:00:00</indulasiIdo>
+        <erkezesiIdo>2022-08-30T10:00:00</erkezesiIdo>
+        <vanKiszolgalas>igen</vanKiszolgalas>
+    </jarat>
+
+    <!-- Repulo -->
+    <repulo repuloId="r1">
+        <gyarto>Airbus</gyarto>
+        <modell>A320</modell>
+        <gyartasiEv>2018</gyartasiEv>
+        <kapacitas>200</kapacitas>
+    </repulo>
+
+    <repulo repuloId="r2">
+        <gyarto>Boeing</gyarto>
+        <modell>737</modell>
+        <gyartasiEv>2021</gyartasiEv>
+        <kapacitas>210</kapacitas>
+    </repulo>
+
+    <repulo repuloId="r3">
+        <gyarto>Airbus</gyarto>
+        <modell>A380</modell>
+        <gyartasiEv>2012</gyartasiEv>
+        <kapacitas>700</kapacitas>
+    </repulo>
+
+    <repulo repuloId="r4">
+        <gyarto>Boeing</gyarto>
+        <modell>787</modell>
+        <gyartasiEv>2019</gyartasiEv>
+        <kapacitas>400</kapacitas>
+    </repulo>
+
+    <!-- Repter -->
+    <repter repterId="repter1">
+        <IATA>BUD</IATA>
+        <ICAO>LHBP</ICAO>
+        <nev>Budapesti Nemzetkozi Repuloter</nev>
+        <orszag>Magyarorszag</orszag>
+        <varos>Budapest</varos>
+    </repter>
+
+    <repter repterId="repter2">
+        <IATA>LHR</IATA>
+        <ICAO>EGLL</ICAO>
+        <nev>Londoni-Heathrow-i repuloter</nev>
+        <orszag>Anglia</orszag>
+        <varos>London</varos>
+    </repter>
+
+    <repter repterId="repter3">
+        <IATA>CDG</IATA>
+        <ICAO>LFPG</ICAO>
+        <nev>Parizs-Charles de Gaulle-i repuloter</nev>
+        <orszag>Parizs</orszag>
+        <varos>Franciaorszag</varos>
+    </repter>
+
+    <!-- Iroda -->
+    <iroda legitarsasagId="l1" repterId="r1">
+        <ferohely>30</ferohely>
+    </iroda>
+
+    <iroda legitarsasagId="l2" repterId="r1">
+        <ferohely>150</ferohely>
+    </iroda>
+
+    <iroda legitarsasagId="l1" repterId="r2">
+        <ferohely>15</ferohely>
+    </iroda>
+
+    <iroda legitarsasagId="l3" repterId="r3">
+        <ferohely>300</ferohely>
+    </iroda>
+
+    <!-- Legitarsasag -->
+    <legitarsasag legitarsasagId="l1">
+        <nev>Wizz Air</nev>
+        <dolgozokSzama>60000</dolgozokSzama>
+        <orszag>Magyarorszag</orszag>
+        <telefonszam>+36207683378</telefonszam>
+        <telefonszam>+449867728992</telefonszam>
+        <telefonszam>+998137718821</telefonszam>
+    </legitarsasag>
+
+    <legitarsasag legitarsasagId="l2">
+        <nev>Ryan Air</nev>
+        <dolgozokSzama>3400</dolgozokSzama>
+        <orszag>Franciaorszag</orszag>
+        <telefonszam>+362075235378</telefonszam>
+        <telefonszam>+449668858992</telefonszam>
+        <telefonszam>+198199418821</telefonszam>
+    </legitarsasag>
+
+    <legitarsasag legitarsasagId="l3">
+        <nev>Easy Jet</nev>
+        <dolgozokSzama>5200</dolgozokSzama>
+        <orszag>Anglia</orszag>
+        <telefonszam>+36207683331</telefonszam>
+        <telefonszam>+44986771232</telefonszam>
+        <telefonszam>+991234718821</telefonszam>
+    </legitarsasag>
+
+    <!-- Utas -->
+    <utas utasId="u1">
+        <nev>Toth Bela</nev>
+        <cim>
+            <orszag>Magyarorszag</orszag>
+            <helyiseg>Miskolc</helyiseg>
+            <irsz>3530</irsz>
+            <utca>Minta</utca>
+            <hazszam>19</hazszam>
+        </cim>
+        <email>bela@gmail.com</email>
+        <email>bela.munka@gmail.com</email>
+        <szuletesiIdo>1990-12-12</szuletesiIdo>
+    </utas>
+
+    <utas utasId="u2">
+        <nev>Balatoni Adam</nev>
+        <cim>
+            <orszag>Ausztria</orszag>
+            <helyiseg>Becs</helyiseg>
+            <irsz>9999</irsz>
+            <utca>Utcanev</utca>
+            <hazszam>100</hazszam>
+        </cim>
+        <email>adam@gmail.com</email>
+        <email>adam.munka@gmail.com</email>
+        <szuletesiIdo>1992-10-12</szuletesiIdo>
+    </utas>
+
+    <utas utasId="u3">
+        <nev>Kiss Arpad</nev>
+        <cim>
+            <orszag>Anglia</orszag>
+            <helyiseg>london</helyiseg>
+            <irsz>ABCD123</irsz>
+            <utca>Main</utca>
+            <hazszam>190</hazszam>
+        </cim>
+        <email>arpad@gmail.com</email>
+        <szuletesiIdo>1980-02-12</szuletesiIdo>
+    </utas>
+
+    <!-- Foglalas -->
+    <foglalas jaratId="j1" utasId="u1">
+        <ar>50000</ar>
+        <datum>2022-07-14</datum>
+    </foglalas>
+
+    <foglalas jaratId="j2" utasId="u1">
+        <ar>45000</ar>
+        <datum>2022-07-18</datum>
+    </foglalas>
+
+    <foglalas jaratId="j3" utasId="u2">
+        <ar>45000</ar>
+        <datum>2022-07-31</datum>
+    </foglalas>
+
+    <foglalas jaratId="j2" utasId="u3">
+        <ar>92000</ar>
+        <datum>2022-07-18</datum>
+    </foglalas>
+</repules>
