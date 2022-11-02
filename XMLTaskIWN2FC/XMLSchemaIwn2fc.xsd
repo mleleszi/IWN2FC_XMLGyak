@@ -124,7 +124,7 @@
             <xs:element name="IATA" type="xs:string"/>
             <xs:element name="ICAO" type="xs:string"/>
             <xs:element name="nev" type="xs:string"/>
-            <xs:element name="orszag" type="xs:string"/>
+            <xs:element ref="orszag"/>
             <xs:element name="varos" type="xs:string"/>
         </xs:sequence>
         <xs:attribute name="repterId" type="xs:string" use="required"/>
@@ -142,7 +142,7 @@
         <xs:sequence>
             <xs:element name="nev" type="xs:string"/>
             <xs:element name="dolgozokSzama" type="xs:integer"/>
-            <xs:element name="orszag" type="xs:string"/>
+            <xs:element ref="orszag"/>
             <xs:element name="telefonszam" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="legitarsasagId" type="xs:string" use="required"/>
@@ -154,7 +154,7 @@
             <xs:element name="cim">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="orszag" type="xs:string"/>
+                        <xs:element ref="orszag"/>
                         <xs:element name="helyiseg" type="xs:string"/>
                         <xs:element name="irsz" type="xs:string"/>
                         <xs:element name="utca" type="xs:string"/>
@@ -176,4 +176,7 @@
         <xs:attribute name="utasId" type="xs:string" use="required"/>
         <xs:attribute name="jaratId" type="xs:string" use="required"/>
     </xs:complexType>
+
+    <!--  Több helyen felhasznált element -->
+    <xs:element name="orszag" type="xs:string"/>
 </xs:schema>
