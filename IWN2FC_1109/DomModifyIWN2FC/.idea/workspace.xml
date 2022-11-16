@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fab73a03-22c7-48db-aa0c-cb1263465cb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/DomParseIWN2FC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1102/DomParseIWN2FC/out/production/DomParseIWN2FC/domiwn2fc/DomReadIWN2FC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DomModifyIWN2FC/dommodifyiwn2fc/DomModifyIWN2FC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/DomModifyIWN2FC/dommodifyiwn2fc/DomQueryIWN2FC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dommodifyiwn2fc/DomQueryIWN2FC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/out/production/xPathIWN2FC/xpathiwn2fc/xPathIWN2FC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xPathIWN2FC/xPathIWN2FC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/LM_orarend.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/orarendIWN2FC.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/output2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/studentIWN2FC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IWN2FC_1116/studentIWN2FC.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../XMLTaskIWN2FC/DomParseIWN2FC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../XMLTaskIWN2FC/DomParseIWN2FC/DomParseIWN2FC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/sonarlint/issuestore/0/3/0334240dd06e575c6971dade3ee7177c3f09ce70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/sonarlint/issuestore/5/0/50b1286de3adb2b73dc266d594bcb0e45655a97c" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2HJ1fiW1zRYiFM62syd8mn2nhPJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.DomQueryIWN2FC">
+    <configuration name="DomModifyIWN2FC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dommodifyiwn2fc.DomModifyIWN2FC" />
+      <module name="DomModifyIWN2FC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dommodifyiwn2fc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomQueryIWN2FC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dommodifyiwn2fc.DomQueryIWN2FC" />
+      <module name="DomModifyIWN2FC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dommodifyiwn2fc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DomQueryIWN2FC" />
+        <item itemvalue="Application.DomModifyIWN2FC" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fab73a03-22c7-48db-aa0c-cb1263465cb8" name="Changes" comment="" />
+      <created>1667988477509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667988477509</updated>
+      <workItem from="1667988480269" duration="1528000" />
+      <workItem from="1668593575444" duration="434000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
